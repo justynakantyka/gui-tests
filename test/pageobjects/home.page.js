@@ -3,9 +3,17 @@ import Page from './page.js';
 
 class HomePage extends Page {
 
-    async getNavigationMenuItemByText(bookmark) {
+    getNavigationMenuItemByText(bookmark) {
         return $('.header-nav-main.nav-right').$(`.nav-top-link=${bookmark}`);
     }
+
+    getBookmarkItem(item) {
+        return $('.menu-item.current-dropdown').$(`.ux-menu-link__text=${item}`);
+    }
+
+    getInTouchButton () {
+        return $('.header-nav-main.nav-right').$('.header-button');
+    };
 
     open() {
         return super.open('');
