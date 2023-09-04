@@ -15,6 +15,10 @@ class HomePage extends Page {
         return $('.header-nav-main.nav-right').$('.header-button');
     };
 
+    removeCookieBar () {
+        return super.removeCookieBar();
+    }
+
     open() {
         return super.open('');
     }

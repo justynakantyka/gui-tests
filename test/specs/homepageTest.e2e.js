@@ -4,6 +4,7 @@ import HomePage from '../pageobjects/home.page.js';
 describe('Homepage', () => {
     beforeEach(async function() {
         await HomePage.open();
+        await HomePage.removeCookieBar();
     });
 
     it('should verify if specific bookmarks are visible', async () => {
