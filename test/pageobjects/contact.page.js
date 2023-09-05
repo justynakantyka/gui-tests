@@ -3,37 +3,50 @@ import Page from './page.js';
 
 class ContactPage extends Page {
 
-    getContactFormButton() {
-        return $('input[type="submit"].hs-button');
-    }
-
-    getFirstNameErrorMsg() {
+    get firstNameErrorMsg() {
         return $('.hs-firstname .hs-error-msg');
     }
 
-    getLastNameErrorMsg() {
+    get lastNameErrorMsg() {
         return $('.hs-lastname .hs-error-msg');
     }
 
-    getEmailErrorMsg() {
+    get emailErrorMsg() {
         return $('.hs-email .hs-error-msg');
     }
 
-    getCountryErrorMsg() {
+    get countryErrorMsg() {
         return $('.hs-country__new_ .hs-error-msg');
     }
 
-    getHowCanWeHelpYouErrorMsg() {
+    get howCanWeHelpYouErrorMsg() {
         return $('.hs-how_can_we_help_you_ .hs-error-msg');
+    }
+
+    get legalConsentErrorMsg() {
+        return $('.hs-dependent-field .hs-error-msg');
+    }
+
+    get rollupErrorMsg() {
+        return $('.hs_error_rollup .hs-error-msgs');
+    }
+
+    get btnSubmit () {
+        return $('input[type="submit"].hs-button');
+    }
+
+    async submitEmptyContactForm() {
+        await this.btnSubmit.click();
+    }
+
+    open() {
+        return super.open('contact/');
     }
 
     removeCookieBar() {
         return super.removeCookieBar();
     }
 
-    open() {
-        return super.open('contact/');
-    }
 }
 
 export default new ContactPage();

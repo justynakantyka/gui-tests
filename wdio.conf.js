@@ -187,6 +187,8 @@ export const config = {
      */
     before: function (capabilities, specs) {
         browser.setWindowSize(1400, 900);
+
+        global.baseUrl = this.baseUrl;
     },
     /**
      * Runs before a WebdriverIO command gets executed.
