@@ -52,4 +52,9 @@ npm run wdio -- --spec ./test/specs/contactPageTest.e2e.js
 
 ## Debugging in VSCode
 In the repository, there is a configuration for debugging tests in VSCode: `.vscode/launch.json`. \
-Open the test file (e.g. test/specs/contactPageTest.e2e.js), go to the 'Run and Debug' tab in VSCode, and click the green arrow to start debugging.
+\
+How to debug:
+1. Open the test file (e.g. `test/specs/contactPageTest.e2e.js`).
+2. Set a breakpoint at the location you want to inspect.
+3. Go to the 'Run and Debug' tab in VSCode.
+4. Click the green arrow to start debugging.
