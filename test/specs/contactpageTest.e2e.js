@@ -9,7 +9,7 @@ describe('Contact Page', () => {
     });
 
     it('should verify if the appropriate validation messages appeared after submitting empty form', async () => {
-        await browser.switchToFrame(0);
+        await ContactPage.switchToIframeForm();
         await ContactPage.submitEmptyContactForm();
         const firstnameErrorMsg = ContactPage.firstNameErrorMsg;
         const lastnameErrorMsg = ContactPage.lastNameErrorMsg;

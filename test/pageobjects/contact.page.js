@@ -1,4 +1,4 @@
-import { $ } from '@wdio/globals'
+import { $ } from '@wdio/globals';
 import Page from './page.js';
 
 class ContactPage extends Page {
@@ -33,6 +33,11 @@ class ContactPage extends Page {
 
     get btnSubmit () {
         return $('input[type="submit"].hs-button');
+    }
+
+    async switchToIframeForm() {
+        const formIframe = await $('.hs-form-iframe')
+        await browser.switchToFrame(formIframe);
     }
 
     async submitEmptyContactForm() {
