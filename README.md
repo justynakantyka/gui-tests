@@ -6,10 +6,11 @@ This repository contains the solution to the QA Automation Challenge as part of 
 * [Requirements](#requirements)
 * [Setup](#setup)
 * [Technologies](#technologies)
+* [Debugging in VSCode](#debugging-in-vscode)
 
 ## Requirements
 - Node.js 18 or Node.js 16 installed (To check node version run: `node -v` or `nvm version` (if you are using nvm))
-- Npm installed (This should be installed with Node.js. To check, run: `npm -v`)
+- Npm installed (It should already be installed when you install Node.js. To check, run: `npm -v`)
 - Java installed and added to your path (https://www.java.com/en/download/)
 - Chrome browser installed
 - Access to the Web
@@ -48,3 +49,7 @@ npm run wdio -- --spec ./test/specs/contactPageTest.e2e.js
 - Spec Reporter
 - Node.js 18/Node.js 16
 - JavaScript
+
+## Debugging in VSCode
+In the repository, there is a configuration for debugging tests in VSCode: `.vscode/launch.json`. \
+Open the test file (e.g. test/specs/contactPageTest.e2e.js), go to the 'Run and Debug' tab in VSCode, and click the green arrow to start debugging.
