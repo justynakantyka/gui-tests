@@ -20,11 +20,15 @@ This repository contains the solution to the QA Automation Challenge as part of 
 ```
 git clone git@github.com:justynakantyka/gui-tests.git
 ```
-**2. Install Dependencies:**
+**2. Go to the gui-tests directory**
+```
+cd gui-tests
+```
+**3. Install Dependencies:**
 ```
 npm i
 ```
-**3. Run Tests locally:** \
+**4. Run Tests locally:** \
 To run **all specs**, use the following command:
 ```
 npm run wdio
