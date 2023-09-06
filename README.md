@@ -1,6 +1,6 @@
 # gui-tests
 
-This repository contains the solution to the QA Automation Challenge as part of the next phase of the qualification process. It allowing me to showcase my skills in testing and demonstrate my problem-solving abilities.
+This repository contains the solution to the QA Automation Challenge. It allowing me to showcase my skills in testing and demonstrate my problem-solving abilities.
 
 ## Table of contents
 * [Requirements](#requirements)
